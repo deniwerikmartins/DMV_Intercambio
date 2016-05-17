@@ -33,7 +33,7 @@
 						<li><a href="cadastro.php" tabindex="23">Cadastro em intercâmbio</a></li>
 						<li><a href="dep_aereo.php" tabindex="24">Departamento Aéreo</a></li>
 					</ul>
-					
+				</li>
 				<li><a href="#" tabindex="25">Área do Usuário</a>
 					<ul>
 						<li><a href="atualizar.php" tabindex="26">Atualizar Cadastro</a></li>
@@ -41,6 +41,7 @@
 						<li><a href="proposta.php" tabindex="28">Enviar propostas de Intercâmbio</a></li>
 					</ul>
 				</li>
+				
 				<li  id="navbusca"><a href="buscar.php">Busca</a></li>
 				<li  id="navregistro"><a href="registro.php">Registre-se</a></li>
 				<li  id="navlogin"><a href="login.php">Login</a></li>
@@ -51,7 +52,7 @@
 					<p id="busca">
 						<label>
 							<a href="buscar.php">Busca</a>
-							<input type="text">
+							<input type="text" size="10">
 							<input type="submit" value="Buscar" name="submit">
 						</label>
 					</p>
@@ -62,13 +63,14 @@
 				</form>
 
 			
-			<p id="registre-se">
-				<a href="registro.php">Registre-se</a>
-			</p>
 			<p id="login">
 				<a href="login.php">Login</a>
 			</p>
-
+			
+			<p id="registre-se">
+				<a href="registro.php">Registre-se</a>
+			</p>
+		
 		</nav>
 
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
