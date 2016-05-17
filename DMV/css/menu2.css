@@ -12,55 +12,44 @@
 
 
 #wrapper{
-width:100%;
-margin-left:auto;
-margin-right:auto;
-clear:both;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
 }
 
 nav{
-height:0px;
-position:fixed;
-top:0px;
-width:100%;
-z-index:2000;
+	height:0px;
+	position:fixed;
+	top:0px;
+	width:100%;
+	z-index:2000;
 }
 
-#busca{
-	margin-left: 70%;
-	margin-top: -70px;
-    /*margin-bottom:;*/
-	
-}
 
 #busca a{
+	position:absolute;
 	color: #fff;
 }
 
-
-#registre-se {
-	position:relative;
-	top:-15px;
-	left: 28%;
-
-	height:150px;
-	
+#busca input[type="text"]{
+	position:relative;	
 }
 
-#login {
+#busca input[type="submit"]{
 	position:relative;
-	top:-165px;
-	left: 83%;
-
 }
 
 
-#registre-se a{
+
+#login a{
+	position:absolute;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #fff;
-	
 }
-#login a{
+
+#registre-se a{
+	position:absolute;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #fff;
 }
@@ -68,32 +57,32 @@ z-index:2000;
 
 
 header{
-position:relative;
-top:40px;
-width:100%;
-padding-top:1%;
-padding-bottom:1%;
-/*float:top;*/
-
-/*clear:both;*/
-background-color:#ff5400;
+	position:relative;
+	top:40px;
+	width:100%;
+	padding-top:1%;
+	padding-bottom:1%;
+	/*float:top;*/
+	
+	/*clear:both;*/
+	background-color:#ff5400;
 
 }
 
 div > .csslider1{
-position:relative;
-top:40px;
+	position:relative;
+	top:40px;
 }
 
 	
 main {
-position:relative;
-top:40px;
-width: 98%;
-
-/*float: left;*/
-
-padding:1%;
+	position:relative;
+	top:40px;
+	width: 98%;
+	
+	/*float: left;*/
+	
+	padding:1%;
 }
 
 footer{
@@ -112,115 +101,115 @@ footer{
 }
 
 #soc1{
-width:3%;
+	width:3%;
 }
 
 #soc2{
-width:3%;
+	width:3%;
 }
 
 #soc3{
-width:3%;
+	width:3%;
 }
 
 .depoimentos{
-border-radius:100%;
-/*width:100%;*/
+	border-radius:100%;
+	/*width:100%;*/
 }
 
 #dep1{
-margin-left:15%;
-width:14.7%
+	margin-left:15%;
+	width:14.7%
 }
 
 #dep2{
-margin-left:15%;
-width:14.7%;
+	margin-left:15%;
+	width:14.7%;
 }
 
 #dep3{
-margin-left:15%;
-width:14.7%
+	margin-left:15%;
+	width:14.7%
 }
 
 #dep4{
-margin-left:15%;
-width:14.7%
+	margin-left:15%;
+	width:14.7%
 }
 
 #dep5{
-margin-left:15%;
-width:14.7%
+	margin-left:15%;
+	width:14.7%
 }
 
 #dep6{
-margin-left:15%;
-width:14.7%
+	margin-left:15%;
+	width:14.7%
 }
 
 
 
 .artigos{
-margin-top:50px;
+	margin-top:50px;
 }
 
 article h3{
-margin-top:20px;
+	margin-top:20px;
 }
 
 article p{
-margin-top:20px;
+	margin-top:20px;
 }
 
 main h2{
-margin-top:20px;
+	margin-top:20px;
 }
 
 main h1{
-font-size:220%;
-margin-left:30%;
+	font-size:220%;
+	margin-left:30%;
 }
 
 main p{
-margin-top:20px;
+	margin-top:20px;
 }
 
 main img{
-width:50%;
+	width:50%;
 }
 
 main a input{
-padding:1%;	
+	padding:1%;	
 }
 
 form fieldset{
-padding:10px;
+	padding:10px;
 }
 
 form{
-margin-top:20px;
-margin-bottom:20px;
+	margin-top:20px;
+	margin-bottom:20px;
 }
 
 .cp_aereas{
-width:25%;
-margin-left:5%;
-margin-bottom:1%;
-margin-right:1%;
-margin-top:1%;
+	width:25%;
+	margin-left:5%;
+	margin-bottom:1%;
+	margin-right:1%;
+	margin-top:1%;
 }
 
 footer p{
-display:block;
+	display:block;
 }
 
 main h2 a{
-text-decoration:underline;	
+	text-decoration:underline;	
 }
 
 legend{
-font-weight:bold;
-font-size:24px;
+	font-weight:bold;
+	font-size:24px;
 }
 
 @media screen and (max-width:319px) {
@@ -434,20 +423,35 @@ font-size:24px;
 	width:20px;
 	}
 	
-	#busca a{
-    margin-left: -50%;
+    #busca a{
+	left:71%;
+	top:15px;	
     }
     
-    #busca input{
+    #busca input[type="text"]{
+    left:78%;
+    top:-65px;
     }
     
-    #registre-se a{
-	margin-left: -15%;	    
+    #busca input[type="submit"]{
+    left:79%;
+    top:-65px;
     }
     
     #login a{
-    margin-left: -10%;
+    left:79%;
+    top:35px;
     }
+    
+    
+    #registre-se a{
+	left:86%;
+	top:35px;
+    }
+    
+   
+    
+    
 
 }
 
@@ -499,25 +503,34 @@ font-size:24px;
 	left:1%;
 	width:20px;
 	}
-	
-	#busca a{
-    margin-left: -50%;
+
+
+    #busca a{
+	left:70%;
+	top:15px;	
     }
     
-    #busca input{
+    #busca input[type="text"]{
+    left:75%;
+    top:-65px;
     }
     
-    #registre-se a{
-	left:58%;    
+    #busca input[type="submit"]{
+    left:76%;
+    top:-65px;
     }
     
     #login a{
-   	top: -33px; 
-    /*left: 70%;*/
-    margin-left:-20%;
+    left:76%;
+    top:35px;
     }
-	
 
-		
+    #registre-se a{
+    left:80%;
+    top:35px;
+    }
+    
 	
+    
+    
 }
