@@ -11,10 +11,34 @@ class UsuarioDAO{
         if (!$stmt->execute()) {
             return "Erro: (" . $stmt->errno . ") " . $stmt->error . "<br>";
         }
+        $stmt = $mysqli->prepare("SELECT * FROM Login order by cd_User DESC LIMIT 1");
+        $stmt->execute();
+        $stmt->bind_result($id,$nome,$senha);
+        $stmt->fetch();
+        $prod = new Usuario($id,$nome,$senha);
+        $stmt = $mysqli->prepare("INSERT INTO Tramite(cd_Usuario) VALUES (?)");
+        $stmt->bind_param("i",$prod->getId());
+        $stmt->execute();                       
         $stmt->close();
         return "";
     }
+    
+    public function authUser($login,$senha){
+        $mysqli = new mysqli("127.0.0.1", "redblood666", "", "teste");
+        $stmt = $mysqli->prepare("SELECT id FROM User WHERE login=? AND senha=?");
+        $stmt->bind_param("ss",$login,$senha);
+        $stmt->execute();
+        $stmt->bind_result($id);
+        $stmt->fetch();
+        if($id > 0){
+            //ACHEI O USUARIO E O LOGIN E SENHA
+            //ESTAO CORRETAS
+            return $id;
+        }else{
+            //USUARIO OU SENHA INVALIDOS
+            return false;
+        }
 
 }
-
+}
 ?>
