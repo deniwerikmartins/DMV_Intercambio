@@ -16,7 +16,12 @@ class CadastroDAO{
         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
         $stmt->bind_param("ssssssssssssssssssssssssssssssssssss",
         $c->getnUsuario(),$c->getEndereco(),$c->getComplemento(),$c->getBairro(),$c->getCidade(),$c->getEstado(),
-        $c->getCEP());
+        $c->getCEP(),$c->getTelRes(),$c->getCelular(),$c->getTelComercial(),$c->getNacionalidade(),$c->getRg(),
+        $c->getCpf,$c->getPassaporte(),$C->getValidoAte(),$c->getProfissao(),$c->getEmail(),$c->getMae(),
+        $c->getTelComercialMae(),$c->getEmailMae(),$c->getPai(),$c->getCelPai(),$c->getTelComercialPai(),
+        $c->getEmailPai(),$c->getContatoEmergencia(),$C->getCelEmergencia(),$c->getTelComercialEmergencia(),
+        $c->getEmailEmergencia(),$c->getNivelConhecimento(),$c->getFumante(),$c->getVegetariano(),$c->getAlergico(),
+        $c->getAlergias(),$c->getOBS());
         
         
         if (!$stmt->execute()) {
