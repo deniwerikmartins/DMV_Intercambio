@@ -28,7 +28,8 @@ class Cadastro{
         $this->celular = $cd_Celular;
         $this->telComercial =$cd_TelComercial, 
         $this->nacionalidade =$nm_Nacionalidade,
-        $this->cpg =$cd_RG, $cd_CPF,
+        $this->rg =$cd_RG, 
+        $this->cpf =$cd_CPF,
         $this->passaporte=$cd_Passaporte,
         $this->validaAte =$dt_ValidoAte, 
         $this->profissao =$nm_Profissao, 
@@ -60,8 +61,109 @@ class Cadastro{
     }
     
     public function getUsurario(){
-        return $this->usuario;
+        return $this->nm_Usuario;
     }
+    
+    public function getEndereco(){
+        return $this->ds_Endereco;
+    }
+    public function getComplemento(){
+        return $this->ds_Complemento;
+    }
+    public function getBairro(){
+        return $this->nm_Bairro;
+    }
+    public function getCidade(){
+        return $this->nm_Cidade;
+    }
+    public function getEstado(){
+        return $this->nm_Estado;
+    }
+    public function getCEP(){
+        return $this->cd_CEP;
+    }
+    public function getTelRes(){
+        return $this->cd_TelRes;
+    }
+    public function getCelular(){
+        return $this->cd_Celular;
+    }
+    public function getTelComercial(){
+        return $this->cd_TelComercial;
+    }
+    public function getNacionalidade(){
+        return $this->nm_Nacionalidade;
+    }
+    public function getRg(){
+        return $this->cd_RG;
+    }
+    public function getCpf(){
+        return $this->cd_CPF;
+    }
+    public function getPassaporte(){
+        return $this->cd_Passaporte;
+    }
+    public function getValidoAte(){
+        return $this->dt_ValidoAte;
+    }
+    public function getProfissao(){
+        return $this->nm_Profissao;
+    }
+    public function getEmail(){
+        return $this->nm_Email;
+    }
+    public function getMae(){
+        return $this->nm_Mae;
+    }
+    public function getTelComercialMae(){
+        return $this->cd_TelComercialMae;
+    }
+    public function getEmailMae(){
+        return $this->nm_EmailMae;
+    }
+    public function getPai(){
+        return $this->nm_Pai;
+    }
+    public function getCelPai(){
+        return $this->cd_CelPai;
+    }
+    public function getTelComercialPai(){
+        return $this->cd_TelComercialPai;
+    }
+    public function getEmailPai(){
+        return $this->nm_EmailPai;
+    }
+    public function getContatoEmergencia(){
+        return $this->nm_ContatoEmergencia;
+    }
+    public function getCelEmergencia(){
+        return $this->cd_CelEmergencia;
+    }
+    public function getTelComercialEmergencia(){
+        return $this->cd_TelComercialEmergencia;
+    }
+    public function getEmailEmergencia(){
+        return $this->nm_EmailEmergencia;
+    }
+    public function getNivelConhecimento(){
+        return $this->sg_NivelConhecimento;
+    }
+    public function getFumante(){
+        return $this->ic_Fumante;
+    }
+    public function getVegetariano(){
+        return $this->ic_Vegetariano;
+    }
+    public function getAlergico(){
+        return $this->ic_Alergico;
+    }
+    public function getAlergias(){
+        return $this->ds_Alergias;
+    }
+    public function getOBS(){
+        return $this->ds_OBS;
+    }
+    
     
 }
 
