@@ -10,8 +10,7 @@ require 'nav.php';
 
 <main>
 <h1>Ficha de inscrição de cursos</h1>
-<form name="cad" method="POST"
-	action="cad.sucesso.php">
+<form name="cliente" method="POST" action="inserir">
 
 	<fieldset>
 		<legend>Dados do Participante</legend>
@@ -104,7 +103,7 @@ require 'nav.php';
 
 		<p>
 			<label>Nome completo da mãe: <input type="text" size="25"
-				name="nomedamae">
+				name="mae">
 			</label>
 		</p>
 
@@ -121,7 +120,7 @@ require 'nav.php';
 
 		<p>
 			<label>Nome completo do pai: <input type="text" size="25"
-				name="nomepai">
+				name="pai">
 			</label>
 		</p>
 
@@ -154,31 +153,31 @@ require 'nav.php';
 
 		<p>
 			<label>Nivel de conhecimento: <input type="radio" name="conhecimento"
-				value="iniciante"> <span> Iniciante </span> <input type="radio"
-				name="conhecimento" value="basico"> <span> Basico</span> <input
-				type="radio" name="conhecimento" value="intermediario"> <span>
+				value="ini"> <span> Iniciante </span> <input type="radio"
+				name="conhecimento" value="bas"> <span> Basico</span> <input
+				type="radio" name="conhecimento" value="int"> <span>
 					Intermediário</span> <input type="radio" name="conhecimento"
-				value="avancado"> <span> Avançado</span>
+				value="ava"> <span> Avançado</span>
 			</label>
 		</p>
 
 		<p>
-			<label>Fumante: <input type="radio" name="fumante" value="sim"> <span>
-					Sim</span> <input type="radio" name="fumante" value="nao"> <span>
+			<label>Fumante: <input type="radio" name="fumante" value="1"> <span>
+					Sim</span> <input type="radio" name="fumante" value="0"> <span>
 					Não</span>
 			</label>
 		</p>
 
 		<p>
 			<label>Vegetariano: <input type="radio" name="vegetariano"
-				value="sim"> <span> Sim</span> <input type="radio"
-				name="vegetariano" value="nao"> <span> Não</span>
+				value="1"> <span> Sim</span> <input type="radio"
+				name="vegetariano" value="0"> <span> Não</span>
 			</label>
 		</p>
 
 		<p>
-			<label>Alergias?: <input type="radio" name="alergico" value="sim"> <span>
-					Sim</span> <input type="radio" name="alergico" value="nao"> <span>
+			<label>Alergias?: <input type="radio" name="alergico" value="1"> <span>
+					Sim</span> <input type="radio" name="alergico" value="0"> <span>
 					Não</span>
 			</label>
 		</p>
