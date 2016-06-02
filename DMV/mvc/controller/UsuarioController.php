@@ -4,7 +4,7 @@ class UsuarioController extends Controller{
     
     // /home/formulario
   
-    
+    // /usuario/registro  
 
     
     public function insert(){
@@ -17,8 +17,8 @@ class UsuarioController extends Controller{
     }
 
     
-    public function cadastro(){
-        $this->logado();
+    public function registro(){
+        //$this->logado();
         $this->view->renderizar("registro");
     }
     
