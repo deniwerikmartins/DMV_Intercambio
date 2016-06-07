@@ -21,18 +21,17 @@ class UsuarioDAO{
     }
     
     public function authUser($login,$senha){
-        $mysqli = new mysqli("127.0.0.1", "redblood666", "", "dmv");
+        $mysqli = new mysqli("127.0.0.1", "root", "", "dmv");
         $stmt = $mysqli->prepare("SELECT cd_Usuario FROM Usuario WHERE nm_Usuario=? AND nm_Senha=?");
         $stmt->bind_param("ss",$login,$senha);
         $stmt->execute();
         $stmt->bind_result($id);
         $stmt->fetch();
         if($id > 0){
-            //ACHEI O USUARIO E O LOGIN E SENHA
-            //ESTAO CORRETAS
+            
             return $id;
         }else{
-            //USUARIO OU SENHA INVALIDOS
+           
             return false;
         }
     }
