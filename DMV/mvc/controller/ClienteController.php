@@ -4,7 +4,6 @@ class ClienteController extends Controller{
     
     // /cliente/cadastro
     
-    // $_SESSION["_ID"] <-------------- variavel de sessão com a id do USUARIO logado
     
     public function __call($m,$a){
         $this->view->renderizar("erro");
@@ -42,7 +41,7 @@ class ClienteController extends Controller{
     }
     
      public function update(){
-        $c = new Cliente($_SESSION["_ID"]/* alterado para pegar da session o id do usuario logado*/,$_POST["nome"],$_POST["endereco"],$_POST["complemento"],
+        $c = new Cliente($_SESSION["_ID"],$_POST["nome"],$_POST["endereco"],$_POST["complemento"],
         $_POST["bairro"],$_POST["cidade"],$_POST["estado"],$_POST["cep"],
         $_POST["residencial"],$_POST["celular"],$_POST["comercial"],$_POST["nascimento"],
         $_POST["nacionalidade"],$_POST["rg"],$_POST["cpf"],$_POST["passaporte"],$_POST["validade"],
@@ -63,6 +62,8 @@ class ClienteController extends Controller{
     
     
     
+        
+    }
     
-}
+?>
     
