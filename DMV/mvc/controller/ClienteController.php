@@ -25,12 +25,13 @@ class ClienteController extends Controller{
         $_POST["conhecimento"],$_POST["fumante"],$_POST["vegetariano"],$_POST["alergico"],
         $_POST["alergias"],$_POST["obs"],$_POST["nomepagante"],$_POST["enderecopagante"],
         $_POST["complementopagante"],$_POST["bairropagante"],$_POST["cidadepagante"],
-        $_POST["estadopagante"],$_POST["ceppagante"],$_POST["resppagante"],$_POST["celpagante"],
+        $_POST["estadopagante"],$_POST["ceppagante"],$_POST["respagante"],$_POST["celpagante"],
         $_POST["compagante"],$_POST["emailpagante"],$_POST["cpfpagante"],$_POST["escolaagente"],
         $_POST["pais"],$_POST["cidadeescola"],$_POST["tipocurso"],$_POST["datainicio"],
         $_POST["datatermino"],$_POST["duracao"],$_POST["materialdidatico"]);
         $cDAO = new ClienteDAO;
         $cDAO->insert($c);
+        $cDAO->tramite($c);
         $this->view->renderizar("cad.sucesso");
         
     }
@@ -51,13 +52,13 @@ class ClienteController extends Controller{
         $_POST["conhecimento"],$_POST["fumante"],$_POST["vegetariano"],$_POST["alergico"],
         $_POST["alergias"],$_POST["obs"],$_POST["nomepagante"],$_POST["enderecopagante"],
         $_POST["complementopagante"],$_POST["bairropagante"],$_POST["cidadepagante"],
-        $_POST["estadopagante"],$_POST["ceppagante"],$_POST["resppagante"],$_POST["celpagante"],
+        $_POST["estadopagante"],$_POST["ceppagante"],$_POST["respagante"],$_POST["celpagante"],
         $_POST["compagante"],$_POST["emailpagante"],$_POST["cpfpagante"],$_POST["escolaagente"],
         $_POST["pais"],$_POST["cidadeescola"],$_POST["tipocurso"],$_POST["datainicio"],
         $_POST["datatermino"],$_POST["duracao"],$_POST["materialdidatico"]);
-        $cDAO = new ClienteDAO;
+        $cDAO = new ClienteDAO();
         $cDAO->update($c);
-        $this->view->renderizar("cad.sucesso");
+        $this->view->renderizar("at.sucesso");
     }
     
     
