@@ -1,6 +1,7 @@
 <?php
 
 class UsuarioDAO{
+    
     public function insert(Usuario $u){
         $mysqli = new mysqli("127.0.0.1", "root", "", "dmv");
         if ($mysqli->connect_errno) {
@@ -11,13 +12,6 @@ class UsuarioDAO{
         if (!$stmt->execute()) {
             return "Erro: (" . $stmt->errno . ") " . $stmt->error . "<br>";
         }
-        $stmt = $mysqli->prepare("SELECT * FROM Usuario order by cd_Usuario DESC LIMIT 1");
-        $stmt->execute();
-        $stmt->bind_result($id,$nome,$senha);
-        $stmt->fetch();
-        $prod = new Usuario($id,$nome,$senha);
-        
-        return $prod;
     }
     
     public function authUser($login,$senha){
@@ -36,16 +30,5 @@ class UsuarioDAO{
         }
     }
     
-    public function tramite($i){
-        $mysqli = new mysqli("127.0.0.1", "root", "", "dmv");
-        if ($mysqli->connect_errno) {
-            return "Falha no MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-        }
-        $stmt = $mysqli->prepare("INSERT INTO Tramite(cd_Cliente) VALUES (?)");
-        $stmt->bind_param("i",$i);
-        $stmt->execute();                       
-        $stmt->close();
-        
-    }
 }
 ?>
