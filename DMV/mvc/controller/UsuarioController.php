@@ -1,27 +1,29 @@
 <?php
 
 class UsuarioController extends Controller{
-    
-    // /home/formulario
-  
-    // /usuario/registro  
 
     
     public function insert(){
-        $u = new Usuario(0,$_POST["usuario"],$_POST["password"]);
+        $senha = $_POST["password"];
+        $custo = '08';
+        $salto = 'Cf1f11ePArKlBJomM0F6aJ';
+        $hash = crypt($senha, '$2a$' . $custo . '$' . $salto . '$');
+        
+        $u = new Usuario(0,$_POST["usuario"],$hash);
         $uDAO = new UsuarioDAO;
-        $ret = $uDAO->insert($u);
-        $uDAO->tramite($ret);
+        $uDAO->insert($u);
         $this->view->renderizar("cad.sucesso");
         
     }
 
     
     public function registro(){
-        //$this->logado();
         $this->view->renderizar("registro");
     }
     
+    public function area(){
+        $this->view->renderizar("usuario");
+    }
 }
 
-?>
+?> 
