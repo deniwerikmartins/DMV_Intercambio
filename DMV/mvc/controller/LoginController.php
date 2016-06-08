@@ -13,14 +13,8 @@ class LoginController extends Controller{
         unset($_SESSION["_ID"]);
         $this->view->renderizar("index");
     }
-    
-    public function logado(){
-        $this->estaAutorizado();
-        $this->view->renderizar("index");
-    }
-    
+  
     public function usuario(){
-        unset($_SESSION["_ID"]);
         $this->view->renderizar("login");
     }
     
@@ -28,14 +22,15 @@ class LoginController extends Controller{
         $um = new UsuarioDAO();
         $login = $_POST["login"];
         $senha = $_POST["senha"];
-        //Sera falsa se nao encontrar
-        //Sera o id(cd_User) se encontrar
-        $ehLoginCorreto = $um->authUser($login,$senha);
+        $custo = '08';
+        $salto = 'Cf1f11ePArKlBJomM0F6aJ';
+        $hash = crypt($senha, '$2a$' . $custo . '$' . $salto . '$');
+        $ehLoginCorreto = $um->authUser($login,$hash);
         if($ehLoginCorreto === false)
             header("Location: /login/usuario");
         else{
             $_SESSION["_ID"] = $ehLoginCorreto;
-            header("Location: /login/logado");
+            header("Location: /usuario/area");
         }
     }
     
