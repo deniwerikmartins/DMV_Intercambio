@@ -54,6 +54,12 @@ nav{
 	color: #fff;
 }
 
+#logout a{
+	position:absolute;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+
 
 
 header{
@@ -262,7 +268,7 @@ legend{
 	width:20px;
 	}
 	
-	#busca input, #busca a, #registre-se a, #login a{
+	#busca input, #busca a, #registre-se a, #login a, #logout a{
     display: none;
     }
 }
@@ -318,7 +324,7 @@ legend{
 	width:20px;
 	}
 	
-	#busca input, #busca a, #registre-se a, #login a{
+	#busca input, #busca a, #registre-se a, #login a, #logout a{
     display: none;
     }
 	
@@ -372,7 +378,7 @@ legend{
 	width:20px;
 	}
 	
-	#busca input, #busca a, #registre-se a, #login a{
+	#busca input, #busca a, #registre-se a, #login a, #logout a{
     display: none;
     }
 	
@@ -447,6 +453,11 @@ legend{
     #registre-se a{
 	left:86%;
 	top:35px;
+    }
+    
+    #logout a{
+    left:92%;
+    top:35px;
     }
     
    
@@ -527,6 +538,11 @@ legend{
 
     #registre-se a{
     left:80%;
+    top:35px;
+    }
+    
+    #logout a{
+    left:88%;
     top:35px;
     }
     
