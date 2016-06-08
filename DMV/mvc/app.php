@@ -10,22 +10,22 @@ class App{
     }
     
     public function startApp(){
-        $clazzName = ucfirst($this->clazz)."Controller";
-        require_once "controller/Controller.php";
-        $filename = "controller/".$clazzName.".php";
-        if (file_exists($filename)){
-            $modelName = ucfirst($this->clazz) . "Model";
-            require_once "model/" . $modelName . ".php";
-            require_once "model/" . ucfirst($this->clazz) . "DAO.php";
-            require_once $filename;
-            $c = new $clazzName();
-            $met= $this->met;
-            $c->$met();
+        $clazzName = ucfirst($this->clazz) . "Controller";
+        $modelName = ucfirst($this->clazz) . "Model";
+        if($modelName == "LoginModel"){
+            require_once "model/UsuarioModel.php";
+            require_once "model/UsuarioDAO.php";
         }else{
-            require_once "controller/HomeController.php";
-            $c = new HomeController();
-            $c->call(); 
+            if($modelName !== "HomeModel"){
+                require_once "model/" . $modelName . ".php";
+                require_once "model/" . ucfirst($this->clazz) . "DAO.php";    
+            }
         }
+        require_once "controller/Controller.php";
+        require_once "controller/" . $clazzName . ".php";
+        $hc = new $clazzName();
+        $met = $this->met;
+        $hc->$met();
     }
 }
 
@@ -38,5 +38,3 @@ $r = new App($met,$clazz);
 $r->startApp();
 
 ?>
-
-
