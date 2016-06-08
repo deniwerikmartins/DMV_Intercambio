@@ -7,7 +7,7 @@ class Cliente{
         $mae, $celmae, $commae, $emailmae, $pai, $celpai, $compai, $emailpai, $emergencia,
         $celemergencia, $comemergencia, $emailemergencia, $conhecimento, $fumante, $vegetariano,
         $alergico, $alergias, $obs, $nomepagante, $enderecopagante, $complementopagante, $bairropagante,
-        $cidadepagante, $estadopagante, $ceppagante, $resppagante, $celpagante, $compagante, $emailpagante,
+        $cidadepagante, $estadopagante, $ceppagante, $respagante, $celpagante, $compagante, $emailpagante,
         $cpfpagante, $escolaagente, $pais, $cidadeescola, $tipocurso, $datainicio, $datatermino, $duracao,
         $materialdidatico;
     
@@ -16,10 +16,10 @@ class Cliente{
         $mae, $celmae, $commae, $emailmae, $pai, $celpai, $compai, $emailpai, $emergencia,
         $celemergencia, $comemergencia, $emailemergencia, $conhecimento, $fumante, $vegetariano,
         $alergico, $alergias, $obs, $nomepagante, $enderecopagante, $complementopagante, $bairropagante,
-        $cidadepagante, $estadopagante, $ceppagante, $resppagante, $celpagante, $compagante, $emailpagante,
+        $cidadepagante, $estadopagante, $ceppagante, $respagante, $celpagante, $compagante, $emailpagante,
         $cpfpagante, $escolaagente, $pais, $cidadeescola, $tipocurso, $datainicio, $datatermino, $duracao,
         $materialdidatico){
-            $this->user = 1; // pegar valor da session
+            $this->user = $user;
             $this->nome = $nome;
             $this->endereco = $endereco;
             $this->complemento = $complemento;
@@ -63,7 +63,7 @@ class Cliente{
             $this->cidadepagante = $cidadepagante;
             $this->estadopagante = $estadopagante;
             $this->ceppagante = $ceppagante;
-            $this->resppagante = $resppagante;
+            $this->respagante = $respagante;
             $this->celpagante = $celpagante;
             $this->compagante = $compagante;
             $this->emailpagante = $emailpagante;
@@ -254,8 +254,8 @@ class Cliente{
         return $this->ceppagante;
     }
     
-    public function getRespPagante(){
-        return $this->resppagante;
+    public function getResPagante(){
+        return $this->respagante;
     }
     
     public function getCelPagante(){
@@ -305,8 +305,6 @@ class Cliente{
     public function getMaterialDidatico(){
         return $this->materialdidatico;
     }
-    
-    
     
     
 }
