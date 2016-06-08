@@ -7,9 +7,9 @@
 			
 			<main>
 				
-				<p><a href="index.html">Home > </a> Intercâmbio > <a href="int_frances.html">Intercâmbio na França</a></p><br>
+				<p><a href="/home/index">Home > </a> Intercâmbio > <a href="int_frances.html">Intercâmbio na França</a></p><br>
 			
-				<img src="imagens/fra.jpg" alt="imagem da frança">
+				<img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/imagens/fra.jpg" alt="imagem da frança">
 				
 				<h1>França:</h1>
 				

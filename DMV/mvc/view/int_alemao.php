@@ -7,9 +7,9 @@
 			
 			<main>
 				
-			<p><a href="index.html">Home > </a> IntercÃ¢mbio > <a href="int_ingles.html">Intercâmbio na Alemanha</a></p><br>	
+			<p><a href="/home/index">Home > </a> IntercÃ¢mbio > <a href="int_ingles.html">Intercâmbio na Alemanha</a></p><br>	
 		
-			<img src="imagens/alem.jpg" alt="imagem da alemanha">
+			<img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/imagens/alem.jpg" alt="imagem da alemanha">
 			
 			<h1>Alemanha:</h1>
 		

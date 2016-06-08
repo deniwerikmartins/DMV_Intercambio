@@ -6,9 +6,9 @@
 ?>
 			<main>
 				
-				<p><a href="index.html">Home > </a> Intercâmbio > <a href="int_italiano.html">Intercâmbio na Itália</a></p><br>
+				<p><a href="/home/index">Home > </a> Intercâmbio > <a href="int_italiano.html">Intercâmbio na Itália</a></p><br>
 		
-				<img src="imagens/Itali.jpg" alt="imagem da itália">
+				<img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/imagens/Itali.jpg" alt="imagem da itália">
 				
 				<h1>Itália:</h1>
 				

@@ -6,9 +6,9 @@
 ?>
 		<main>
 			
-			<p><a href="index.html">Home > </a> Intercâmbio > <a href="int_espanhol.html">Intercâmbio na Espanha</a></p><br>
+			<p><a href="/home/index">Home > </a> Intercâmbio > <a href="int_espanhol.html">Intercâmbio na Espanha</a></p><br>
 		
-			<img src="imagens/espa.jpg" alt="imagem da espanha">
+			<img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/imagens/espa.jpg" alt="imagem da espanha">
 			
 			<h1>Espanha:</h1>
 			

@@ -53,7 +53,7 @@
 			
 			<a id="contato"></a>
 			
-			<form action="recebido.php" method="post">
+			<form action="/home/recebido" method="post">
 			
 				<fieldset>
 				

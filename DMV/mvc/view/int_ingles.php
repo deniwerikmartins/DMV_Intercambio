@@ -6,9 +6,9 @@
 ?>
 			<main>
 				
-				<p><a href="index.html">Home > </a> Intercâmbio > <a href="int_ingles.html">Intercâmbio nos Estados Unidos</a></p><br>
+				<p><a href="/home/index">Home > </a> Intercâmbio > <a href="int_ingles.html">Intercâmbio nos Estados Unidos</a></p><br>
 
-				<img src="imagens/eua2.jpg" alt="imagem dos estados unidos">
+				<img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/imagens/eua2.jpg" alt="imagem dos estados unidos">
 
 				<h1>Estados Unidos:</h1>
 				

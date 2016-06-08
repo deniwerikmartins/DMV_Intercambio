@@ -6,9 +6,9 @@
 ?>
 			<main>
 				
-				<p><a href="index.html">Home > </a> Intercâmbio > <a href="int_mandarim.html">Intercâmbio na China</a></p><br>
+				<p><a href="/home/index">Home > </a> Intercâmbio > <a href="int_mandarim.html">Intercâmbio na China</a></p><br>
 
-				<img src="imagens/Chin.jpg" alt="">
+				<img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/imagens/Chin.jpg" alt="">
 				
 				<h1>China:</h1>
 				

@@ -32,13 +32,13 @@
 			<input name="cs_anchor1" id="cs_pause1_6" type="radio" class="cs_anchor pause">
 			<ul>
 				<li class="cs_skeleton"><img src="cssslider_files/csss_images1/mundi.png" style="width: 100%;" alt="Mapa Mundi"></li>
-				<li class="num0 img slide"> <img src="cssslider_files/csss_images1/mundi.png" alt="Mundo" title="Mundo"></li>
-				<li class="num1 img slide"> <img src="cssslider_files/csss_images1/eua.png" alt="Estados Unidos da América" title="Estados Unidos da América"></li>
-				<li class="num2 img slide"> <img src="cssslider_files/csss_images1/espanha.png" alt="Espanha" title="Espanha"></li>
-				<li class="num3 img slide"> <img src="cssslider_files/csss_images1/franca.png" alt="França" title="França"></li>
-				<li class="num4 img slide"> <img src="cssslider_files/csss_images1/alemanha.png" alt="imagem do parlamento alemão, com varias bandeiras, de dia e com pessoas circulando a área" title="Alemanha"></li>
-				<li class="num5 img slide"> <img src="cssslider_files/csss_images1/china.png" alt="China" title="China"></li>
-				<li class="num6 img slide"> <img src="cssslider_files/csss_images1/italia.png" alt="Italia" title="Italia"></li>
+				<li class="num0 img slide"> <img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_images1/mundi.png" alt="Mundo" title="Mundo"></li>
+				<li class="num1 img slide"> <img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_images1/eua.png" alt="Estados Unidos da América" title="Estados Unidos da América"></li>
+				<li class="num2 img slide"> <img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_images1/espanha.png" alt="Espanha" title="Espanha"></li>
+				<li class="num3 img slide"> <img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_images1/franca.png" alt="França" title="França"></li>
+				<li class="num4 img slide"> <img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_images1/alemanha.png" alt="imagem do parlamento alemão, com varias bandeiras, de dia e com pessoas circulando a área" title="Alemanha"></li>
+				<li class="num5 img slide"> <img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_images1/china.png" alt="China" title="China"></li>
+				<li class="num6 img slide"> <img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_images1/italia.png" alt="Italia" title="Italia"></li>
 			</ul><div class="cs_engine"><a href="http://cssslider.com">jquery gallery</a> by cssSlider.com v2.0</div>
 			<div class="cs_description">
 				<label class="num0"><span class="cs_title"><span class="cs_wrapper">Mundo</span></span></label>
@@ -79,19 +79,19 @@
 			</div>
 			<div class="cs_bullets">
 				<label class="num0" for="cs_slide1_0"> <span class="cs_point"></span>
-					<span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/mundi.png" alt="Mundo" title="Mundo"></span></label>
+					<span class="cs_thumb"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_tooltips1/mundi.png" alt="Mundo" title="Mundo"></span></label>
 				<label class="num1" for="cs_slide1_1"> <span class="cs_point"></span>
-					<span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/eua.png" alt="Estados Unidos da América" title="Estados Unidos da América"></span></label>
+					<span class="cs_thumb"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_tooltips1/eua.png" alt="Estados Unidos da América" title="Estados Unidos da América"></span></label>
 				<label class="num2" for="cs_slide1_2"> <span class="cs_point"></span>
-					<span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/espanha.png" alt="Espanha" title="Espanha"></span></label>
+					<span class="cs_thumb"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view//csss_tooltips1/espanha.png" alt="Espanha" title="Espanha"></span></label>
 				<label class="num3" for="cs_slide1_3"> <span class="cs_point"></span>
-					<span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/franca.png" alt="França" title="França"></span></label>
+					<span class="cs_thumb"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_tooltips1/franca.png" alt="França" title="França"></span></label>
 				<label class="num4" for="cs_slide1_4"> <span class="cs_point"></span>
-					<span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/alemanha.png" alt="Alemanha" title="Alemanha"></span></label>
+					<span class="cs_thumb"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_tooltips1/alemanha.png" alt="Alemanha" title="Alemanha"></span></label>
 				<label class="num5" for="cs_slide1_5"> <span class="cs_point"></span>
-					<span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/china.png" alt="China" title="China"></span></label>
+					<span class="cs_thumb"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_tooltips1/china.png" alt="China" title="China"></span></label>
 				<label class="num6" for="cs_slide1_6"> <span class="cs_point"></span>
-					<span class="cs_thumb"><img src="cssslider_files/csss_tooltips1/italia.png" alt="Italia" title="Italia"></span></label>
+					<span class="cs_thumb"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/cssslider_files/csss_tooltips1/italia.png" alt="Italia" title="Italia"></span></label>
 			</div>
 			</div>
 			<!-- End cssSlider.com -->
@@ -100,14 +100,14 @@
 			<main>
 					<h1>Depoimentos</h1>
 					<p>
-						<a href="depoimentos.php#dep_eua"><img src="imagens/depo-eua.jpg" alt="depoimento 1" id="dep1" class="depoimentos" tabindex="1"></a>
-						<a href="depoimentos.php#dep_fra"><img src="imagens/depo-franca.jpg" alt="depoimento 2" id="dep2" class="depoimentos" tabindex="2"></a>
-						<a href="depoimentos.php#dep_ale"><img src="imagens/depo-alemanha.jpg" alt="depoimento 3" id="dep3" class="depoimentos" tabindex="3"></a>
+						<a href="/home/depoimentos"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/imagens/depo-eua.jpg" alt="depoimento 1" id="dep1" class="depoimentos" tabindex="1"></a><!--depoimentos.php#dep_eua -->
+						<a href="/home/depoimentos"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/imagens/depo-franca.jpg" alt="depoimento 2" id="dep2" class="depoimentos" tabindex="2"></a><!--depoimentos.php#dep_fra -->
+						<a href="/home/depoimentos"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/imagens/depo-alemanha.jpg" alt="depoimento 3" id="dep3" class="depoimentos" tabindex="3"></a><!--depoimentos.php#dep_ale -->
 					</p>
 					<p>
-						<a href="depoimentos.php#dep_ita"><img src="imagens/depo-italia.jpg" alt="depoimento 4" id="dep4" class="depoimentos" tabindex="4"></a>
-						<a href="depoimentos.php#dep_chi"><img src="imagens/depo-china.jpg" alt="depoimento 5" id="dep5" class="depoimentos" tabindex="5"></a>
-						<a href="depoimentos.php#dep_esp"><img src="imagens/depo-espanha.jpg" alt="depoimento 6" id="dep6" class="depoimentos" tabindex="6"></a>
+						<a href="/home/depoimentos"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/imagens/depo-italia.jpg" alt="depoimento 4" id="dep4" class="depoimentos" tabindex="4"></a><!--depoimentos.php#dep_ita -->
+						<a href="/home/depoimentos"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/imagens/depo-china.jpg" alt="depoimento 5" id="dep5" class="depoimentos" tabindex="5"></a><!--depoimentos.php#dep_chi -->
+						<a href="/home/depoimentos"><img src="https://dmv-intercambio-redblood666-1.c9users.io/mvc/view/imagens/depo-espanha.jpg" alt="depoimento 6" id="dep6" class="depoimentos" tabindex="6"></a><!--depoimentos.php#dep_esp -->
 					</p>
 			</main>	
 			
