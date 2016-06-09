@@ -7,19 +7,32 @@
 ?>
 	<main>
 		<h1>Acompanhe o status dos processos</h1>
-		<p>Dados Cadastrais: Ok <img alt="ok" src="imagens/visto.png" class="imgvisto"></p>
-		<p>Envio de proposta: Ok <img alt="ok" src="imagens/visto.png" class="imgvisto"></p>
-		<p>Passaporte: Ok <img alt="ok" src="imagens/visto.png" class="imgvisto"></p>
-		<p>Voo: Ok <img alt="ok" src="imagens/visto.png" class="imgvisto"></p>
-		<p>Visto: Em andamento <img alt="ok" src="imagens/engrenagens.png" class="imgprocessamento"></p>
-		<p>Pagamento: Não processado <img alt="ok" src="imagens/negado.png" class="imgnegado"></p>
-		<p>Escola: Em andamento <img alt="ok" src="imagens/engrenagens.png" class="imgprocessamento"></p>
-		<p>Material didático: Em andamento <img alt="ok" src="imagens/engrenagens.png" class="imgprocessamento"></p>
-		<p>Acomodações: Ok <img alt="ok" src="imagens/visto.png" class="imgvisto"></p>
-		<br>
-		<p>Em caso de duvidas sobre algum tramite não concluido, favor entrar em contato</p>
-	
+			<table border="2">
+				<thead>
+					<tr><td>Tramite</td><td>Status</td></tr>
+				</thead>
+				<tbody>
+					<?php
+						foreach($dado as $tramite){
+							echo '<tr><td>Processo</td><td>'. $tramite->getProcesso() .'</td></tr>';
+							echo '<tr><td>Usuario</td><td>'. $tramite->getUsuario() .'</td></tr>';
+							echo '<tr><td>Dados Cadastrais</td><td>'. $tramite->getDadosCadastrais() .'</td></tr>';
+							echo '<tr><td>Envio Proposta</td><td>'. $tramite->getEnvioProposta() .'</td></tr>';
+							echo '<tr><td>Passaporte</td><td>'. $tramite->getPassaporte() .'</td></tr>';
+							echo '<tr><td>Voo</td><td>'. $tramite->getVoo() .'</td></tr>';
+							echo '<tr><td>Visto</td><td>'. $tramite->getVisto() .'</td></tr>';
+							echo '<tr><td>Pagamento</td><td>'. $tramite->getPagamento() .'</td></tr>';
+							echo '<tr><td>Escola</td><td>'. $tramite->getEscola() .'</td></tr>';
+							echo '<tr><td>Material didatico</td><td>'. $tramite->getMaterialDidatico() .'</td></tr>';
+							echo '<tr><td>Acomodações</td><td>'. $tramite->getAcomodacoes() .'</td></tr>';
+						}
+					?>
+				</tbody>
+	        	
+	        </table>
+
 	</main>
+	
 
 
 <?php 
