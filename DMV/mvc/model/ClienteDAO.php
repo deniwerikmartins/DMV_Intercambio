@@ -49,7 +49,7 @@ class ClienteDAO{
         
         $stmt->close();
         
-        $stmt = $mysqli->prepare("INSERT INTO Programa_Intercambio (cd_Cliente, nm_EscolaAgente,
+        $stmt = $mysqli->prepare("INSERT INTO Programa_Intercambio (cd_Usuario, nm_EscolaAgente,
         nm_Pais, nm_Cidade, ds_TipoCurso, dt_InicioCurso, dt_TerminoCurso, ds_Duracao, ic_MaterialDidatico)
         VALUES(?,?,?,?,?,?,?,?,?)");
         $stmt->bind_param("isssssssi",$usuario,$c->getEscolaAgente(),$c->getPais(),$c->getCidadeEscola(),$c->getTipoCurso(),$c->getDataInicio(),
