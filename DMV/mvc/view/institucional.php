@@ -53,7 +53,7 @@
 			
 			<a id="contato"></a>
 			
-			<form action="/home/recebido" method="post">
+			<form action="emailcontato" method="post">
 			
 				<fieldset>
 				
