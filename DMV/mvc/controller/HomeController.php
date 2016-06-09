@@ -106,6 +106,29 @@ class HomeController extends Controller{
     public function washington(){
         $this->view->renderizar("washington");
     }
+    
+    public function emailcontato(){
+        $nome = $_POST["nome"];
+        $email = $_POST["email"];
+        $telefone = $_POST["telefone"];
+        $endereco = $_POST["endereco"];
+        $comentarios = $_POST["comentarios"];
+        
+        $msg = "Nome: $nome \n".
+        "Telefone: $telefone \n".
+        "Endereço: $endereco \n".
+        "Comentarios: $comentarios";
+        
+        $para = 'adm@dmvintercambio.com.br';
+        $assunto = 'Formulario de Contato';
+        
+        mail($para, $assunto, $msg, 'From:' . $email);
+        
+        $this->view->renderizar("recebido");
+    }
+    
+    
+    
    
 }
 
